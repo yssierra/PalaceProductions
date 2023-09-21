@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+    text-decoration: none;
+}
+
+/* Estilos para el fondo oscurecido */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Aumentamos la opacidad para que oscurezca más */
+    z-index: 9998; /* Un z-index menor que el del popup */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 600ms;
+}
+
+/* btn-open-popup del 1-12 por estilos úcicos a cada uno */
+.btn-open-popup.btn-open-popup_1 {
+    position: absolute;
+    top: 480px;
+    margin-left: 120px;
+    transform: translate(-50%, -50%);
+    color: #574444;
+    display: block;
+    background: rgb(218 175 130);
+    padding: 17px 50px;
+    border-radius: 50px;
+}
+.btn-open-popup.btn-open-popup_2 {
+    position: absolute;
+    top: 480px;
+    margin-left: 120px;
+    transform: translate(-50%, -50%);
+    color: #574444;
+    display: block;
+    background: rgb(218 175 130);
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+.btn-open-popup.btn-open-popup_3 {
+    position: absolute;
+    top: 480px;
+    margin-left: 100px;
+    margin-right: -30px;
+    transform: translate(-50%, -50%);
+    color: #574444;
+    display: block;
+    background: rgb(218 175 130);
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+.btn-open-popup.btn-open-popup_4 {
+    position: absolute;
+    top: 480px;
+    margin-right: -275px;
+    margin-left: 110px;
+    transform: translate(-50%, -50%);
+    color: #574444;
+    display: block;
+    background: rgb(218 175 130);
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+.btn-open-popup.btn-open-popup_5 {
+    position: absolute;
+    top: 480px;
+    margin-left: 120px;
+    transform: translate(-50%, -50%);
+    color: #574444;
+    display: block;
+    background: rgb(218 175 130);
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+.btn-open-popup.btn-open-popup_6 {
+    position: absolute;
+    top: 480px;
+    margin-left: 120px;
+    transform: translate(-50%, -50%);
+    color: #574444;
+    display: block;
+    background: rgb(218 175 130);
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+.btn-open-popup.btn-open-popup_7 {
+    position: absolute;
+    top: 480px;
+    margin-left: 120px;
+    transform: translate(-50%, -50%);
+    color: #574444;
+    display: block;
+    background: rgb(218 175 130);
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+.btn-open-popup.btn-open-popup_8 {
+    position: absolute;
+    top: 480px;
+    margin-right: -275px;
+    margin-left: 110px;
+    transform: translate(-50%, -50%);
+    color: #574444;
+    display: block;
+    background: rgb(218 175 130);
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+.btn-open-popup.btn-open-popup_9 {
+    position: absolute;
+    top: 480px;
+    margin-left: 120px;
+    transform: translate(-50%, -50%);
+    color: #574444;
+    display: block;
+    background: rgb(218 175 130);
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+.btn-open-popup.btn-open-popup_10 {
+    position: absolute;
+    top: 480px;
+    margin-left: 120px;
+    transform: translate(-50%, -50%);
+    color: #574444;
+    display: block;
+    background: rgb(218 175 130);
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+.btn-open-popup.btn-open-popup_11 {
+    position: absolute;
+    top: 480px;
+    margin-left: 120px;
+    transform: translate(-50%, -50%);
+    color: #574444;
+    display: block;
+    background: rgb(218 175 130);
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+.btn-open-popup.btn-open-popup_12 {
+    position: absolute;
+    top: 480px;
+    margin-right: -275px;
+    margin-left: 110px;
+    transform: translate(-50%, -50%);
+    color: #574444;
+    display: block;
+    background: rgb(218 175 130);
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+
+
+/* container-all.modal del 1-12 por estilos úcicos a cada uno */
+.container-all.modal1 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.container-all.modal2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.container-all.modal3 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.container-all.modal4 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.container-all.modal5 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.container-all.modal6 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.container-all.modal7 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.container-all.modal8 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.container-all.modal9 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.container-all.modal10 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.container-all.modal11 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+.container-all.modal12 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+
+.container-all:target {
+    background: rgba(0, 0, 0, 0.8);
+    visibility: visible;
+    opacity: 1;
+}
+
+.container-all:target .popup {
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    visibility: visible;
+}
+
+.popup {
+    margin-top: 0px;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    position: fixed;
+    display: flex;
+    background: white;
+    visibility: hidden;
+    top: -80%;
+    left: -80%;
+    transform: rotate(90deg) translate(-150%, 230%);
+    transition: all 600ms;
+    z-index: 9999;
+}
+
+/* img_popup del 1-12 por estilos únicos a cada uno */
+.img_popup_1 {
+    width: 40%;
+    background-image: url(/static/img/axe.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_popup_2 {
+    width: 40%;
+    background-image: url(/static/img/clubcolombia.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_popup_3 {
+    width: 40%;
+    background-image: url(/static/img/copaagua.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_popup_4 {
+    width: 40%;
+    background-image: url(/static/img/copasyvino.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_popup_5 {
+    width: 40%;
+    background-image: url(/static/img/carte.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_popup_6 {
+    width: 40%;
+    background-image: url(/static/img/axe.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_popup_7 {
+    width: 40%;
+    background-image: url(/static/img/vaquera.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_popup_8 {
+    width: 40%;
+    background-image: url(/static/img/stephane.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_popup_9 {
+    width: 40%;
+    background-image: url(/static/img/CREDITOS8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_popup_10 {
+    width: 40%;
+    background-image: url(/static/img/CREDITOS3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_popup_11 {
+    width: 40%;
+    background-image: url(/static/img/gucci.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img_popup_12 {
+    width: 40%;
+    background-image: url(/static/img/destello.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container-text {
+    width: 60%;
+    padding: 30px;
+    overflow-y: auto;
+    color: black;
+}
+
+.container-text h1 {
+    font-size: 30px;
+}
+
+.container-text p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.btn-close-popup {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .popup {
+        flex-direction: column;
+        height: 100%;
+        max-height: 800px;
+    }
+
+    .img_popup.img_popup_1 {
+        width: 100%;
+        height: 40%;
+    }
+    .img_popup.img_popup_2 {
+        width: 100%;
+        height: 40%;
+    }
+    .img_popup.img_popup_3 {
+        width: 100%;
+        height: 40%;
+    }
+    .img_popup.img_popup_4 {
+        width: 100%;
+        height: 40%;
+    }
+    .img_popup.img_popup_5 {
+        width: 100%;
+        height: 40%;
+    }
+    .img_popup.img_popup_6 {
+        width: 100%;
+        height: 40%;
+    }
+    .img_popup.img_popup_7 {
+        width: 100%;
+        height: 40%;
+    }
+    .img_popup.img_popup_8 {
+        width: 100%;
+        height: 40%;
+    }
+    .img_popup.img_popup_9 {
+        width: 100%;
+        height: 40%;
+    }
+    .img_popup.img_popup_10 {
+        width: 100%;
+        height: 40%;
+    }
+    .img_popup.img_popup_11 {
+        width: 100%;
+        height: 40%;
+    }
+    .img_popup.img_popup_12 {
+        width: 100%;
+        height: 40%;
+    }
+
+    .container-text {
+        width: 100%;
+        height: 60%;
+        padding: 80px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .container-text {
+        padding: 20px;
+    }
+
+    .container-text h1 {
+        font-size: 20px;
+    }
+
+    .container-text p {
+        font-size: 12px;
+    }
+}
+
+

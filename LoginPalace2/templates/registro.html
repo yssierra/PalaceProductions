@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/img/Logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}"
+    />
+</head>
+
+<body>
+
+    
+    <form class="formulario">
+
+        <h1>Registrate</h1>
+        <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" placeholder="Nombre completo" pattern="[A-Za-z\s]+" title="Ingrese solo letras y espacios">
+        </div>
+        
+        <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" placeholder="Apellidos" pattern="[A-Za-z\s]+" title="Ingrese solo letras y espacios">
+        </div>
+        
+        <div class="input-contenedor">
+            <i class="fas fa-address-card icon"></i>
+            <input type="text" placeholder="Fecha de nacimiento" pattern="[A-Za-z\s]+" title="Ingrese su fecha de nacimiento">
+        </div>
+        
+        <div class="input-contenedor">
+            <i class="fas fa-id-card icon"></i>
+            <input type="text" placeholder="Número de documento" pattern="[0-9]+" title="Ingrese solo números">
+        </div>
+        
+        <div class="input-contenedor">
+            <i class="fas fa-calendar icon"></i>
+            <input type="date" placeholder="Fecha de nacimiento">
+        </div>
+        
+        <div class="input-contenedor">
+            <i class="fas fa-phone icon"></i>
+            <input type="tel" placeholder="Celular" pattern="[0-9]+" title="Ingrese solo números">
+        </div>
+        
+            <input type="submit" value="Registrarme" class="button">
+            <p>Al registrarte aceptas los términos y condiciones</p>
+            <p>¿Ya tienes cuenta?  <a class="link" href="/LoginPalace2/template/index.html">Iniciar Sesión</a></p>
+        </div>
+    </form>
+</body>
+</html>
